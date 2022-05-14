@@ -5,7 +5,9 @@ import { UserProvider } from "./providers/UserProvider";
 import "./styles.css";
 
 export default function App() {
-  <UserProvider>
-    return <Router />;
-  </UserProvider>;
+  return (
+    <UserProvider>
+      <Router />
+    </UserProvider>
+  );
 }
