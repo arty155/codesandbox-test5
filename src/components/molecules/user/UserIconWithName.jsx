@@ -6,6 +6,7 @@ export const UserIconWithName = (props) => {
   const { image, name } = props;
   const context = useContext(UserContext);
   console.log(context);
+  console.log(context.userinfo.isAdmin);
 
   return (
     <SContainer>
