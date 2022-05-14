@@ -1,9 +1,12 @@
 import React from "react";
 import styled from "styled-components";
+import { useHistory } from "react-router-dom";
 import { SecondaryButton } from "../atoms/button/SecondaryButton";
 
 export const Top = () => {
-  const onClickAdmin = () => alert("管理");
+  const history = useHistory();
+
+  const onClickAdmin = () => history.push("/users");
   return (
     <SContainer>
       <h2>TOPページです</h2>
