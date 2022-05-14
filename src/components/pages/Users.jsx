@@ -21,8 +21,8 @@ const users = [...Array(10).keys()].map((val) => {
 
 export const Users = () => {
   const { userInfo, setUserInfo } = useContext(UserContext);
-  const onClickSwitch = () => setUserInfo({isAdmin: !userInfo.isAdmin});
-  };
+  const onClickSwitch = () => setUserInfo({ isAdmin: !userInfo.isAdmin });
+  console.log(userInfo.isAdmin);
   return (
     <SContainer>
       <h2>ユーザー一覧</h2>
