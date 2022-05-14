@@ -11,7 +11,6 @@ export const UserIconWithName = (props) => {
     <SContainer>
       <SImg height={160} width={160} alt="プロフィール写真" src={image} />
       <SName>{name}</SName>
-      {isAdmin && <SEdit>編集</SEdit>}
     </SContainer>
   );
 };
